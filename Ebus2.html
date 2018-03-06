@@ -10,16 +10,93 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="ebus2_validator.js"></script>
+        
+        
+        <style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body {
+    background-image: url("http://80skiparty.com/wp-content/uploads/2017/12/new-homepage-background-subtle-circs-blue-website-background-homepage-background.jpg");
+}
+
+
+        h1  {
+    text-shadow: 2px 2px green;
+}
+.button {
+    background: linear-gradient(green, yellow, green);
+    border: none;
+    color: Black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+</style>
+
+        
     </head>
     <body>
-        <h4>Please enter your payment details</h4>
+        
+                 <ul>
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="cv_page1.html">CV</a></li>
+  <li><a href="sports.html">Sport</a></li>
+  <li><a href="travel.html">Travel</a></li>
+  <li><a href="cloud_services.html">Cloud Services</a></li>
+  <li><a href="cloudproducts.html">View Products</a></li>
+  <li><a href= "contact.html">Contact Us </a></li>
+</ul>
+    
+     <img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/cloud-circle-blue-512.png" alt="cloud" width="120" height="100" align="left">
+    <img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/cloud-circle-blue-512.png" alt="cloud" width="120" height="100" align="right">
+    <h1 class="mainheading"> <center>TOOMEY CLOUD STORE</center></h1>
+    <br>
+        
+        
+        <h2>Please enter your payment details</h2>
         
         
             <form action="Ebus3.php" method="POST">
 
-                    <label for="user_pin">PIN</label>
-                    
+                     <label for="CardholderName">Cardholder Name</label>
+                    <input type="text" id="CardholderName" placeholder="Cardholder Name">
+                    <br><br>
+                   
+                    <label for="CardNumber">Card Number</label>
+                    <input  type="text" id="CardNumber" placeholder="0000 0000 0000 0000"  maxlength="16">
+                    <br>
+                    <br>
+                    <label for="user_pin">Card PIN</label>
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    <br><br>
 
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
@@ -32,6 +109,6 @@ session_start();
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
             ?>
-        
+        <a href="Ebus3.html"  class="button">Next</a>
     </body>
 </html>
