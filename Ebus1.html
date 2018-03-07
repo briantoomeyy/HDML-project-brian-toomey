@@ -94,7 +94,7 @@ body {
     </p>
 
 <br><br><br>
-    <form method="POST" action="Ebus2.html">
+    <form method="POST" action="Ebus2.php">
               
               <label for="VirtualOffice">
                 <input type="radio" id="VirtualOffice" name="product" checked onClick="disablebtnProceed()"/>
@@ -140,14 +140,17 @@ body {
     
               <br/>
               
-              <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+             
             
             </form>
             
+             <button type="submit" class="button" id="btnProceed" disabled>Add to Shopping Cart</button>
+            
             <br/>
-            <button onClick="calcSub()">Calculate Cost</button>
-            <a href="Ebus1.html">Clear Choice</a>
-    <a href="Ebus2.html"  class="button">Next</a>
+            <button class="button" onClick="calcSub()">Calculate Cost</button>
+            <a  class="button" href="Ebus1.php">Clear Choice</a>
+             <a href="Ebus2.html"  class="button">Next</a>
+    
     
     </body>
 
