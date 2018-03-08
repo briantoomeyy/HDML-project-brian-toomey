@@ -76,8 +76,10 @@ body {
     </head>
     <body>
         <h4>RECEIPT</h4>
-        Welcome <?php echo $_POST["CardNumber"]; ?><br>
-                
+        Name <?php echo $_POST["CardholderName"]; ?><br>
+        E-mail <?php echo $_POST["email"]; ?><br>
+        User PIN <?php echo $_POST["user_pin"]; ?><br>
+                <br><br><br>
         <?php
         // Echo session variables that were set on previous page
         echo "Total is " . $_SESSION["total"] . ".";
